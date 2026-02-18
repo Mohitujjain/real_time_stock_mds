@@ -1,0 +1,33 @@
+[0m13:11:49.139972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B58FA1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B5B56D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B6B659C0>]}
+
+
+============================== 13:11:49.154943 | 75df4ea8-980c-4546-8e32-cc525273bfeb ==============================
+[0m13:11:49.154943 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:11:49.154943 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'invocation_command': 'dbt init dbt_stocks', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:11:49.311561 [info ] [MainThread]: A project called dbt_stocks already exists here.
+[0m13:11:49.316272 [debug] [MainThread]: Command `dbt init` succeeded at 13:11:49.313393 after 0.48 seconds
+[0m13:11:49.316272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B58FA1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B5B54BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B6BC0DF0>]}
+[0m13:11:49.319122 [debug] [MainThread]: Flushing usage events
+[0m13:11:51.095690 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:14:56.090951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E61C9A170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E63ECD390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E63ECCF70>]}
+
+
+============================== 13:14:56.099007 | dcd8e41f-9c77-4e94-a4df-292151a864d3 ==============================
+[0m13:14:56.099007 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:14:56.100026 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt init dbt_stocks', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:14:56.172379 [info ] [MainThread]: A project called dbt_stocks already exists here.
+[0m13:14:56.174661 [debug] [MainThread]: Command `dbt init` succeeded at 13:14:56.174050 after 0.20 seconds
+[0m13:14:56.175182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E61C9A170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E63ECDA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E63F30E20>]}
+[0m13:14:56.175847 [debug] [MainThread]: Flushing usage events
+[0m13:14:57.768243 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:18:42.742068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024488D4A0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002448AF7CF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002448AF174C0>]}
+
+
+============================== 13:18:42.762818 | 85585e66-a1b5-44f4-aff9-3541aa3d5c0d ==============================
+[0m13:18:42.762818 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:18:42.766591 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt init dbt_stocks', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:18:42.872170 [info ] [MainThread]: A project called dbt_stocks already exists here.
+[0m13:18:42.876700 [debug] [MainThread]: Command `dbt init` succeeded at 13:18:42.872170 after 0.28 seconds
+[0m13:18:42.876700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024488D4A0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002448AF7CF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002448AFE0C70>]}
+[0m13:18:42.878439 [debug] [MainThread]: Flushing usage events
+[0m13:18:44.403857 [debug] [MainThread]: An error was encountered while trying to flush usage events

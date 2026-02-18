@@ -1,0 +1,44 @@
+[2026-01-27T12:25:02.301+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-27T12:25:02.339+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-01-27T12:24:00+00:00 [queued]>
+[2026-01-27T12:25:02.347+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-01-27T12:24:00+00:00 [queued]>
+[2026-01-27T12:25:02.348+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-27T12:25:02.363+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_minio> on 2026-01-27 12:24:00+00:00
+[2026-01-27T12:25:02.374+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=702) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-27T12:25:02.376+0000] {standard_task_runner.py:64} INFO - Started process 705 to run task
+[2026-01-27T12:25:02.374+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'download_minio', 'scheduled__2026-01-27T12:24:00+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmphrd7hddj']
+[2026-01-27T12:25:02.377+0000] {standard_task_runner.py:91} INFO - Job 92: Subtask download_minio
+[2026-01-27T12:25:02.465+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.download_minio scheduled__2026-01-27T12:24:00+00:00 [running]> on host e4864a5a192b
+[2026-01-27T12:25:02.590+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='download_minio' AIRFLOW_CTX_EXECUTION_DATE='2026-01-27T12:24:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-27T12:24:00+00:00'
+[2026-01-27T12:25:02.592+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-27T12:25:02.728+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-27T12:25:02.729+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/minio_to_snowflake.py", line 29, in download_from_minio
+    objects = s3.list_objects_v2(Bucket=BUCKET).get("Contents", [])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 565, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 1021, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.NoSuchBucket: An error occurred (NoSuchBucket) when calling the ListObjectsV2 operation: The specified bucket does not exist
+[2026-01-27T12:25:02.753+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=minio_to_snowflake, task_id=download_minio, run_id=scheduled__2026-01-27T12:24:00+00:00, execution_date=20260127T122400, start_date=20260127T122502, end_date=20260127T122502
+[2026-01-27T12:25:02.767+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 92 for task download_minio (An error occurred (NoSuchBucket) when calling the ListObjectsV2 operation: The specified bucket does not exist; 705)
+[2026-01-27T12:25:02.792+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-01-27T12:25:02.820+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-27T12:25:02.824+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

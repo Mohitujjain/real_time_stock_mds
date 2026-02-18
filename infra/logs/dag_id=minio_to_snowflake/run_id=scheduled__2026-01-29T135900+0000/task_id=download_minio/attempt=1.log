@@ -1,0 +1,15 @@
+[2026-01-29T14:00:17.180+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-29T14:00:18.098+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-01-29T13:59:00+00:00 [queued]>
+[2026-01-29T14:00:18.249+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-01-29T13:59:00+00:00 [queued]>
+[2026-01-29T14:00:18.259+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-29T14:00:18.370+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_minio> on 2026-01-29 13:59:00+00:00
+[2026-01-29T14:00:18.477+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=30173) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-29T14:00:18.482+0000] {standard_task_runner.py:64} INFO - Started process 30231 to run task
+[2026-01-29T14:00:18.472+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'download_minio', 'scheduled__2026-01-29T13:59:00+00:00', '--job-id', '283', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmp2igg8dn0']
+[2026-01-29T14:00:18.486+0000] {standard_task_runner.py:91} INFO - Job 283: Subtask download_minio
+[2026-01-29T14:00:29.273+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 283 for task download_minio ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 30231)
+[2026-01-29T14:00:31.919+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-01-29T14:00:33.154+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-29T14:00:33.176+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

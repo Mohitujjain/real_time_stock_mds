@@ -1,0 +1,43 @@
+[2026-02-04T07:31:02.105+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-04T07:31:02.147+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-02-04T07:30:00+00:00 [queued]>
+[2026-02-04T07:31:02.158+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-02-04T07:30:00+00:00 [queued]>
+[2026-02-04T07:31:02.159+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-04T07:31:02.173+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_minio> on 2026-02-04 07:30:00+00:00
+[2026-02-04T07:31:02.183+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'download_minio', 'scheduled__2026-02-04T07:30:00+00:00', '--job-id', '655', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmpn0w89qdi']
+[2026-02-04T07:31:02.187+0000] {standard_task_runner.py:91} INFO - Job 655: Subtask download_minio
+[2026-02-04T07:31:02.188+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=276) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-04T07:31:02.189+0000] {standard_task_runner.py:64} INFO - Started process 279 to run task
+[2026-02-04T07:31:02.280+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.download_minio scheduled__2026-02-04T07:30:00+00:00 [running]> on host 1a57f62d265e
+[2026-02-04T07:31:02.410+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='download_minio' AIRFLOW_CTX_EXECUTION_DATE='2026-02-04T07:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-04T07:30:00+00:00'
+[2026-02-04T07:31:02.412+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-04T07:31:02.602+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770190211.json
+[2026-02-04T07:31:02.610+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770190221.json
+[2026-02-04T07:31:02.619+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770190233.json
+[2026-02-04T07:31:02.628+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770190244.json
+[2026-02-04T07:31:02.639+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770190256.json
+[2026-02-04T07:31:02.649+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770190215.json
+[2026-02-04T07:31:02.660+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770190226.json
+[2026-02-04T07:31:02.670+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770190237.json
+[2026-02-04T07:31:02.680+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770190249.json
+[2026-02-04T07:31:02.691+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770190261.json
+[2026-02-04T07:31:02.703+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770190214.json
+[2026-02-04T07:31:02.712+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770190224.json
+[2026-02-04T07:31:02.721+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770190236.json
+[2026-02-04T07:31:02.730+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770190248.json
+[2026-02-04T07:31:02.740+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770190260.json
+[2026-02-04T07:31:02.749+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770190212.json
+[2026-02-04T07:31:02.758+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770190222.json
+[2026-02-04T07:31:02.769+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770190234.json
+[2026-02-04T07:31:02.777+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770190246.json
+[2026-02-04T07:31:02.786+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770190257.json
+[2026-02-04T07:31:02.795+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770190213.json
+[2026-02-04T07:31:02.806+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770190223.json
+[2026-02-04T07:31:02.814+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770190235.json
+[2026-02-04T07:31:02.823+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770190247.json
+[2026-02-04T07:31:02.832+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770190259.json
+[2026-02-04T07:31:02.833+0000] {python.py:237} INFO - Done. Returned value was: ['/opt/***/data/minio/1770190211.json', '/opt/***/data/minio/1770190221.json', '/opt/***/data/minio/1770190233.json', '/opt/***/data/minio/1770190244.json', '/opt/***/data/minio/1770190256.json', '/opt/***/data/minio/1770190215.json', '/opt/***/data/minio/1770190226.json', '/opt/***/data/minio/1770190237.json', '/opt/***/data/minio/1770190249.json', '/opt/***/data/minio/1770190261.json', '/opt/***/data/minio/1770190214.json', '/opt/***/data/minio/1770190224.json', '/opt/***/data/minio/1770190236.json', '/opt/***/data/minio/1770190248.json', '/opt/***/data/minio/1770190260.json', '/opt/***/data/minio/1770190212.json', '/opt/***/data/minio/1770190222.json', '/opt/***/data/minio/1770190234.json', '/opt/***/data/minio/1770190246.json', '/opt/***/data/minio/1770190257.json', '/opt/***/data/minio/1770190213.json', '/opt/***/data/minio/1770190223.json', '/opt/***/data/minio/1770190235.json', '/opt/***/data/minio/1770190247.json', '/opt/***/data/minio/1770190259.json']
+[2026-02-04T07:31:02.834+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-04T07:31:02.873+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=minio_to_snowflake, task_id=download_minio, run_id=scheduled__2026-02-04T07:30:00+00:00, execution_date=20260204T073000, start_date=20260204T073102, end_date=20260204T073102
+[2026-02-04T07:31:02.926+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-04T07:31:02.954+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-02-04T07:31:02.958+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,205 @@
+🔁 COMPLETE RESTART GUIDE (FROM ZERO → DBT → SNOWFLAKE)
+🧹 STEP 0 — Stop Everything (Clean Start)
+1️⃣ Close all running terminals
+
+Close VS Code terminals
+
+Stop Producer / Consumer if running
+
+2️⃣ Stop Docker containers
+
+Open Command Prompt / PowerShell:
+
+docker ps
+docker stop $(docker ps -q)
+docker compose down
+
+3️⃣ Start Docker Desktop
+
+Open Docker Desktop
+
+Wait until status shows Running ✅
+
+🐍 STEP 1 — Activate Correct Python (3.10)
+
+❗ Docker does NOT need to be running for this step
+
+Open VS Code → Terminal (PowerShell)
+
+cd C:\Users\lenovo\real-time-stocks-mds
+venv\Scripts\activate
+
+
+Verify:
+
+python --version
+
+
+✅ Must show:
+
+Python 3.10.11
+
+
+❌ If NOT → STOP
+
+📦 STEP 2 — Verify Required Python Packages
+pip install kafka-python boto3 snowflake-connector-python dbt-core dbt-snowflake
+
+
+Test Kafka library:
+
+python -c "from kafka import KafkaProducer; print('Kafka OK')"
+
+
+✅ Output:
+
+Kafka OK
+
+🐳 STEP 3 — Start Docker Services (Kafka + MinIO)
+cd infra
+docker compose up -d
+
+
+Verify:
+
+docker ps
+
+
+✅ You MUST see:
+
+zookeeper
+
+kafka
+
+minio
+
+kafdrop (Kafka UI)
+
+🌐 STEP 4 — Verify Services in Browser
+Service	URL
+MinIO	http://localhost:9001
+
+Kafka UI	http://localhost:9005
+MinIO Login
+
+User: admin
+
+Password: password123
+
+Bucket
+
+✅ Must exist:
+
+bronze-tran1234
+
+
+Create manually if missing.
+
+🧠 STEP 5 — Kafka Topic (IMPORTANT – ADDITION)
+🔍 5.1 Check existing topics
+docker exec -it kafka kafka-topics --list --bootstrap-server kafka:9092
+
+➕ 5.2 Create topic (SAFE TO RUN EVERY TIME)
+docker exec -it kafka kafka-topics --create --topic stock-quotes --bootstrap-server kafka:9092 --partitions 1 --replication-factor 1
+
+
+✔ If topic already exists → Kafka will ignore
+✔ This is correct and safe
+
+🚀 STEP 6 — Start Kafka Producer
+Terminal 1 (Producer)
+cd C:\Users\lenovo\real-time-stocks-mds
+venv\Scripts\activate
+cd infra\producer
+python producer.py
+
+
+✅ Expected:
+
+Sent AAPL → partition 0
+Sent MSFT → partition 0
+
+📥 STEP 7 — Start Kafka Consumer (MinIO Writer)
+Terminal 2 (Consumer)
+cd C:\Users\lenovo\real-time-stocks-mds
+venv\Scripts\activate
+cd infra\consumer
+python consumer.py
+
+
+✅ Expected:
+
+Saved record for AAPL = s3://bronze-tran1234/AAPL/...
+
+Verify MinIO
+
+Open MinIO UI
+
+Refresh bucket
+
+You MUST see folders:
+
+AAPL/
+MSFT/
+TSLA/
+
+❄️ STEP 8 — Snowflake Prep (One-Time)
+
+Run in Snowflake Worksheet:
+
+CREATE DATABASE IF NOT EXISTS STOCKS_MDS;
+USE DATABASE STOCKS_MDS;
+
+CREATE SCHEMA IF NOT EXISTS COMMON;
+
+CREATE TABLE IF NOT EXISTS bronze_stock_quotes_raw (
+    data VARIANT
+);
+
+🧊 STEP 9 — dbt Setup
+
+✔ Same terminal or new terminal — both OK
+✔ Command Prompt or VS Code terminal — both OK
+
+cd C:\Users\lenovo\real-time-stocks-mds
+venv\Scripts\activate
+dbt init dbt_stocks
+
+dbt Answers (EXACT)
+Question	Value
+Database	1 (snowflake)
+Account	nv36987.ap-southeast-1
+User	mohit
+Auth	1 (password)
+Password	(type blindly — invisible)
+Role	ACCOUNTADMIN
+Warehouse	COMPUTE_WH
+Database	STOCKS_MDS
+Schema	COMMON
+Threads	4
+
+⚠️ Password will not show — this is normal
+
+✅ STEP 10 — Test dbt Connection
+cd dbt_stocks
+dbt debug
+
+
+✅ You MUST see:
+
+All checks passed!
+
+🏁 FINAL DATA FLOW (CONFIRMED)
+API
+ ↓
+Kafka Producer
+ ↓
+Kafka Topic (stock-quotes)
+ ↓
+Kafka Consumer
+ ↓
+MinIO (Bronze)
+ ↓
+dbt
+ ↓
+Snowflake

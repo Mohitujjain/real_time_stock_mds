@@ -1,0 +1,63 @@
+Snowflake Credentials Password :-
+------------------------------------
+Username : mohit 
+Password : Mohitkumar12345
+
+
+✅ DAILY START FLOW (VERY SHORT & CLEAR)
+0️⃣ Start Docker Desktop
+
+Open Docker Desktop
+-------------------------------------------
+Wait until status shows “Docker is running” ✅
+
+👉 Do NOT skip this step
+
+1️⃣ Open VS Code → Open Terminal
+
+`Ctrl + ``
+--------------------------------------------
+2️⃣ Activate Python virtual environment
+
+(Required only for producer)
+
+venv\Scripts\activate
+--------------------------------------------
+3️⃣ Start Docker services (Kafka, Kafdrop, Airflow)
+cd infra
+----------------------------------------------
+docker compose up -d
+----------------------------------------------
+
+(Optional check)
+
+docker ps
+
+4️⃣ Check Kafka topic (create only first time)
+docker exec -it kafka kafka-topics --list --bootstrap-server kafka:9092
+
+
+Create only if missing:
+
+docker exec -it kafka kafka-topics --create --topic stock-quotes --bootstrap-server kafka:9092 --partitions 1 --replication-factor 1
+------------------------------------------------------------------------------------------------------------
+5️⃣ Open Kafka UI (Kafdrop)
+http://localhost:9000
+-----------------------------------
+6️⃣ Run Producer
+cd ..\producer
+---------------------------------
+python producer.py
+
+--------------------------------
+✅ Data starts flowing
+
+🛑 STOP EVERYTHING (SAFE)
+CTRL + C
+cd ..\infra
+docker compose down
+
+🔁 RESTART (SAME TERMINAL)
+docker compose up -d
+cd ..\producer
+python producer.py

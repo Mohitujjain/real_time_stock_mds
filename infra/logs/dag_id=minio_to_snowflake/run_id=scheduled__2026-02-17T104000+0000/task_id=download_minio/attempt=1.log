@@ -1,0 +1,103 @@
+[2026-02-17T10:45:05.687+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-17T10:45:05.801+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-02-17T10:40:00+00:00 [queued]>
+[2026-02-17T10:45:05.813+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-02-17T10:40:00+00:00 [queued]>
+[2026-02-17T10:45:05.814+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-17T10:45:05.834+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_minio> on 2026-02-17 10:40:00+00:00
+[2026-02-17T10:45:05.880+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'download_minio', 'scheduled__2026-02-17T10:40:00+00:00', '--job-id', '1518', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmpapc74hba']
+[2026-02-17T10:45:05.898+0000] {standard_task_runner.py:91} INFO - Job 1518: Subtask download_minio
+[2026-02-17T10:45:05.912+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=211) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-17T10:45:05.916+0000] {standard_task_runner.py:64} INFO - Started process 214 to run task
+[2026-02-17T10:45:06.159+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.download_minio scheduled__2026-02-17T10:40:00+00:00 [running]> on host bc06947cd9a6
+[2026-02-17T10:45:06.461+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='download_minio' AIRFLOW_CTX_EXECUTION_DATE='2026-02-17T10:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-17T10:40:00+00:00'
+[2026-02-17T10:45:06.464+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-17T10:45:07.501+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771324930.json
+[2026-02-17T10:45:07.512+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771324943.json
+[2026-02-17T10:45:07.525+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771324953.json
+[2026-02-17T10:45:07.536+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771324964.json
+[2026-02-17T10:45:07.548+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771324974.json
+[2026-02-17T10:45:07.561+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771324985.json
+[2026-02-17T10:45:07.570+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771324996.json
+[2026-02-17T10:45:07.589+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325007.json
+[2026-02-17T10:45:07.603+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325017.json
+[2026-02-17T10:45:07.613+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325028.json
+[2026-02-17T10:45:07.624+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325039.json
+[2026-02-17T10:45:07.634+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325049.json
+[2026-02-17T10:45:07.648+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325059.json
+[2026-02-17T10:45:07.657+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325069.json
+[2026-02-17T10:45:07.666+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325080.json
+[2026-02-17T10:45:07.676+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325090.json
+[2026-02-17T10:45:07.687+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1771325101.json
+[2026-02-17T10:45:07.699+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771324936.json
+[2026-02-17T10:45:07.709+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771324946.json
+[2026-02-17T10:45:07.720+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771324957.json
+[2026-02-17T10:45:07.730+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771324968.json
+[2026-02-17T10:45:07.740+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771324978.json
+[2026-02-17T10:45:07.751+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771324989.json
+[2026-02-17T10:45:07.762+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325000.json
+[2026-02-17T10:45:07.773+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325010.json
+[2026-02-17T10:45:07.784+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325021.json
+[2026-02-17T10:45:07.795+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325032.json
+[2026-02-17T10:45:07.804+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325042.json
+[2026-02-17T10:45:07.815+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325052.json
+[2026-02-17T10:45:07.823+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325063.json
+[2026-02-17T10:45:07.832+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325073.json
+[2026-02-17T10:45:07.841+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325083.json
+[2026-02-17T10:45:07.851+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325094.json
+[2026-02-17T10:45:07.859+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1771325105.json
+[2026-02-17T10:45:07.868+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771324934.json
+[2026-02-17T10:45:07.880+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771324945.json
+[2026-02-17T10:45:07.890+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771324955.json
+[2026-02-17T10:45:07.900+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771324965.json
+[2026-02-17T10:45:07.909+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771324976.json
+[2026-02-17T10:45:07.919+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771324987.json
+[2026-02-17T10:45:07.928+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771324998.json
+[2026-02-17T10:45:07.940+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325008.json
+[2026-02-17T10:45:07.951+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325019.json
+[2026-02-17T10:45:07.960+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325030.json
+[2026-02-17T10:45:07.971+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325040.json
+[2026-02-17T10:45:07.981+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325050.json
+[2026-02-17T10:45:07.990+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325061.json
+[2026-02-17T10:45:07.999+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325071.json
+[2026-02-17T10:45:08.008+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325081.json
+[2026-02-17T10:45:08.018+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325092.json
+[2026-02-17T10:45:08.028+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1771325103.json
+[2026-02-17T10:45:08.038+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771324933.json
+[2026-02-17T10:45:08.048+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771324944.json
+[2026-02-17T10:45:08.060+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771324954.json
+[2026-02-17T10:45:08.073+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771324965.json
+[2026-02-17T10:45:08.083+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771324975.json
+[2026-02-17T10:45:08.094+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771324986.json
+[2026-02-17T10:45:08.105+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771324997.json
+[2026-02-17T10:45:08.120+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325008.json
+[2026-02-17T10:45:08.132+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325018.json
+[2026-02-17T10:45:08.146+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325029.json
+[2026-02-17T10:45:08.159+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325039.json
+[2026-02-17T10:45:08.174+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325050.json
+[2026-02-17T10:45:08.186+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325060.json
+[2026-02-17T10:45:08.197+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325070.json
+[2026-02-17T10:45:08.207+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325080.json
+[2026-02-17T10:45:08.217+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325091.json
+[2026-02-17T10:45:08.230+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1771325102.json
+[2026-02-17T10:45:08.240+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771324935.json
+[2026-02-17T10:45:08.250+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771324946.json
+[2026-02-17T10:45:08.261+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771324956.json
+[2026-02-17T10:45:08.272+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771324967.json
+[2026-02-17T10:45:08.284+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771324977.json
+[2026-02-17T10:45:08.296+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771324988.json
+[2026-02-17T10:45:08.307+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771324999.json
+[2026-02-17T10:45:08.335+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325009.json
+[2026-02-17T10:45:08.348+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325020.json
+[2026-02-17T10:45:08.357+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325030.json
+[2026-02-17T10:45:08.368+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325041.json
+[2026-02-17T10:45:08.376+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325051.json
+[2026-02-17T10:45:08.385+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325062.json
+[2026-02-17T10:45:08.396+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325072.json
+[2026-02-17T10:45:08.479+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325082.json
+[2026-02-17T10:45:08.491+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325093.json
+[2026-02-17T10:45:08.500+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1771325104.json
+[2026-02-17T10:45:08.519+0000] {python.py:237} INFO - Done. Returned value was: ['/opt/***/data/minio/AAPL/1771324930.json', '/opt/***/data/minio/AAPL/1771324943.json', '/opt/***/data/minio/AAPL/1771324953.json', '/opt/***/data/minio/AAPL/1771324964.json', '/opt/***/data/minio/AAPL/1771324974.json', '/opt/***/data/minio/AAPL/1771324985.json', '/opt/***/data/minio/AAPL/1771324996.json', '/opt/***/data/minio/AAPL/1771325007.json', '/opt/***/data/minio/AAPL/1771325017.json', '/opt/***/data/minio/AAPL/1771325028.json', '/opt/***/data/minio/AAPL/1771325039.json', '/opt/***/data/minio/AAPL/1771325049.json', '/opt/***/data/minio/AAPL/1771325059.json', '/opt/***/data/minio/AAPL/1771325069.json', '/opt/***/data/minio/AAPL/1771325080.json', '/opt/***/data/minio/AAPL/1771325090.json', '/opt/***/data/minio/AAPL/1771325101.json', '/opt/***/data/minio/AMZN/1771324936.json', '/opt/***/data/minio/AMZN/1771324946.json', '/opt/***/data/minio/AMZN/1771324957.json', '/opt/***/data/minio/AMZN/1771324968.json', '/opt/***/data/minio/AMZN/1771324978.json', '/opt/***/data/minio/AMZN/1771324989.json', '/opt/***/data/minio/AMZN/1771325000.json', '/opt/***/data/minio/AMZN/1771325010.json', '/opt/***/data/minio/AMZN/1771325021.json', '/opt/***/data/minio/AMZN/1771325032.json', '/opt/***/data/minio/AMZN/1771325042.json', '/opt/***/data/minio/AMZN/1771325052.json', '/opt/***/data/minio/AMZN/1771325063.json', '/opt/***/data/minio/AMZN/1771325073.json', '/opt/***/data/minio/AMZN/1771325083.json', '/opt/***/data/minio/AMZN/1771325094.json', '/opt/***/data/minio/AMZN/1771325105.json', '/opt/***/data/minio/GOOGL/1771324934.json', '/opt/***/data/minio/GOOGL/1771324945.json', '/opt/***/data/minio/GOOGL/1771324955.json', '/opt/***/data/minio/GOOGL/1771324965.json', '/opt/***/data/minio/GOOGL/1771324976.json', '/opt/***/data/minio/GOOGL/1771324987.json', '/opt/***/data/minio/GOOGL/1771324998.json', '/opt/***/data/minio/GOOGL/1771325008.json', '/opt/***/data/minio/GOOGL/1771325019.json', '/opt/***/data/minio/GOOGL/1771325030.json', '/opt/***/data/minio/GOOGL/1771325040.json', '/opt/***/data/minio/GOOGL/1771325050.json', '/opt/***/data/minio/GOOGL/1771325061.json', '/opt/***/data/minio/GOOGL/1771325071.json', '/opt/***/data/minio/GOOGL/1771325081.json', '/opt/***/data/minio/GOOGL/1771325092.json', '/opt/***/data/minio/GOOGL/1771325103.json', '/opt/***/data/minio/MSFT/1771324933.json', '/opt/***/data/minio/MSFT/1771324944.json', '/opt/***/data/minio/MSFT/1771324954.json', '/opt/***/data/minio/MSFT/1771324965.json', '/opt/***/data/minio/MSFT/1771324975.json', '/opt/***/data/minio/MSFT/1771324986.json', '/opt/***/data/minio/MSFT/1771324997.json', '/opt/***/data/minio/MSFT/1771325008.json', '/opt/***/data/minio/MSFT/1771325018.json', '/opt/***/data/minio/MSFT/1771325029.json', '/opt/***/data/minio/MSFT/1771325039.json', '/opt/***/data/minio/MSFT/1771325050.json', '/opt/***/data/minio/MSFT/1771325060.json', '/opt/***/data/minio/MSFT/1771325070.json', '/opt/***/data/minio/MSFT/1771325080.json', '/opt/***/data/minio/MSFT/1771325091.json', '/opt/***/data/minio/MSFT/1771325102.json', '/opt/***/data/minio/TSLA/1771324935.json', '/opt/***/data/minio/TSLA/1771324946.json', '/opt/***/data/minio/TSLA/1771324956.json', '/opt/***/data/minio/TSLA/1771324967.json', '/opt/***/data/minio/TSLA/1771324977.json', '/opt/***/data/minio/TSLA/1771324988.json', '/opt/***/data/minio/TSLA/1771324999.json', '/opt/***/data/minio/TSLA/1771325009.json', '/opt/***/data/minio/TSLA/1771325020.json', '/opt/***/data/minio/TSLA/1771325030.json', '/opt/***/data/minio/TSLA/1771325041.json', '/opt/***/data/minio/TSLA/1771325051.json', '/opt/***/data/minio/TSLA/1771325062.json', '/opt/***/data/minio/TSLA/1771325072.json', '/opt/***/data/minio/TSLA/1771325082.json', '/opt/***/data/minio/TSLA/1771325093.json', '/opt/***/data/minio/TSLA/1771325104.json']
+[2026-02-17T10:45:08.521+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-17T10:45:08.630+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=minio_to_snowflake, task_id=download_minio, run_id=scheduled__2026-02-17T10:40:00+00:00, execution_date=20260217T104000, start_date=20260217T104505, end_date=20260217T104508
+[2026-02-17T10:45:08.724+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-17T10:45:08.754+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-02-17T10:45:08.760+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

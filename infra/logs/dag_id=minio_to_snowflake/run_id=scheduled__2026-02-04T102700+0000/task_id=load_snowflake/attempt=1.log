@@ -1,0 +1,54 @@
+[2026-02-04T12:28:23.939+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-04T12:28:24.104+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.load_snowflake scheduled__2026-02-04T10:27:00+00:00 [queued]>
+[2026-02-04T12:28:24.143+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.load_snowflake scheduled__2026-02-04T10:27:00+00:00 [queued]>
+[2026-02-04T12:28:24.159+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-04T12:28:24.449+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_snowflake> on 2026-02-04 10:27:00+00:00
+[2026-02-04T12:28:24.486+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=39274) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-04T12:28:24.483+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'load_snowflake', 'scheduled__2026-02-04T10:27:00+00:00', '--job-id', '983', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmp0y7bwwe3']
+[2026-02-04T12:28:24.490+0000] {standard_task_runner.py:64} INFO - Started process 39899 to run task
+[2026-02-04T12:28:24.491+0000] {standard_task_runner.py:91} INFO - Job 983: Subtask load_snowflake
+[2026-02-04T12:28:25.273+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.load_snowflake scheduled__2026-02-04T10:27:00+00:00 [running]> on host 1a57f62d265e
+[2026-02-04T12:28:26.707+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='load_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-02-04T10:27:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-04T10:27:00+00:00'
+[2026-02-04T12:28:26.735+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-04T12:28:26.833+0000] {connection.py:408} INFO - Snowflake Connector for Python Version: 3.11.0, Python Version: 3.12.4, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2026-02-04T12:28:26.835+0000] {connection.py:1258} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-02-04T12:28:42.947+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2026-02-04T12:28:43.052+0000] {process_utils.py:132} INFO - Sending 15 to group 39899. PIDs of all processes in the group: [39899]
+[2026-02-04T12:28:43.133+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 39899
+[2026-02-04T12:28:43.393+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-02-04T12:28:43.406+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-04T12:28:43.605+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/minio_to_snowflake.py", line 74, in load_to_snowflake
+    cur.execute(f"PUT file://{f} @%bronze_stock_quotes_raw")
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/cursor.py", line 1046, in execute
+    sf_file_transfer_agent.execute()
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/file_transfer_agent.py", line 436, in execute
+    self.transfer(self._file_metadata)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/file_transfer_agent.py", line 652, in transfer
+    cv_main_thread.wait()
+  File "/usr/local/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2026-02-04T12:28:43.789+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=minio_to_snowflake, task_id=load_snowflake, run_id=scheduled__2026-02-04T10:27:00+00:00, execution_date=20260204T102700, start_date=20260204T122824, end_date=20260204T122843
+[2026-02-04T12:28:44.147+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=39899, status='terminated', exitcode=2, started='12:28:23') (39899) terminated with exit code 2
+[2026-02-04T12:28:44.168+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 143
+[2026-02-04T12:28:44.468+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-04T12:28:45.398+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

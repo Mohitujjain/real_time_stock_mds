@@ -1,0 +1,18 @@
+[2026-01-29T14:17:33.807+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-29T14:17:44.074+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.load_snowflake scheduled__2026-01-29T13:56:00+00:00 [queued]>
+[2026-01-29T14:17:44.219+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.load_snowflake scheduled__2026-01-29T13:56:00+00:00 [queued]>
+[2026-01-29T14:17:44.225+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-01-29T14:17:44.474+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_snowflake> on 2026-01-29 13:56:00+00:00
+[2026-01-29T14:17:44.634+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'load_snowflake', 'scheduled__2026-01-29T13:56:00+00:00', '--job-id', '306', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmp0ru3iyvp']
+[2026-01-29T14:17:44.685+0000] {standard_task_runner.py:91} INFO - Job 306: Subtask load_snowflake
+[2026-01-29T14:17:44.894+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=41775) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-29T14:17:44.907+0000] {standard_task_runner.py:64} INFO - Started process 41831 to run task
+[2026-01-29T14:17:57.902+0000] {cli_action_loggers.py:137} WARNING - Failed to log action (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-29T14:18:14.496+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 306 for task load_snowflake ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 41831)
+[2026-01-29T14:18:15.854+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-01-29T14:18:16.009+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-29T14:18:16.031+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,204 @@
+[0m19:26:53.438001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255A53FA170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255A7632170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255A7631360>]}
+
+
+============================== 19:26:53.455631 | a2d4d5b3-8211-490d-964b-6fb263f9b8b1 ==============================
+[0m19:26:53.455631 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:26:53.459615 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init dbt_stocks', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m19:26:53.576886 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\lenovo\.dbt
+[0m19:26:53.588949 [debug] [MainThread]: Starter project path: C:\Users\lenovo\real-time-stocks-mds\venv\lib\site-packages\dbt\include\starter_project
+[0m19:26:53.950671 [info ] [MainThread]: 
+Your new dbt project "dbt_stocks" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:26:53.955193 [info ] [MainThread]: Setting up your profile.
+[0m19:27:04.212037 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:27:04.215030 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:27:04.218116 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:19:34.796006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002166EF660E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216711A0F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216711374F0>]}
+
+
+============================== 13:19:34.806965 | 449fea6e-2b5f-4920-a342-e3d28114b6a7 ==============================
+[0m13:19:34.806965 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:19:34.811213 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:19:34.932665 [info ] [MainThread]: dbt version: 1.11.2
+[0m13:19:34.932665 [info ] [MainThread]: python version: 3.10.11
+[0m13:19:34.935440 [info ] [MainThread]: python path: C:\Users\lenovo\real-time-stocks-mds\venv\Scripts\python.exe
+[0m13:19:34.938218 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m13:19:34.940239 [info ] [MainThread]: Using profiles dir at C:\Users\lenovo\.dbt
+[0m13:19:34.940239 [info ] [MainThread]: Using profiles.yml file at C:\Users\lenovo\.dbt\profiles.yml
+[0m13:19:34.943801 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\lenovo\real-time-stocks-mds\dbt_stocks\dbt_project.yml
+[0m13:19:34.946484 [info ] [MainThread]: Configuration:
+[0m13:19:34.946484 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m13:19:34.950537 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:19:34.950537 [info ] [MainThread]: Required dependencies:
+[0m13:19:34.954149 [debug] [MainThread]: Executing "git --help"
+[0m13:19:35.185471 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:19:35.188946 [debug] [MainThread]: STDERR: "b''"
+[0m13:19:35.192143 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:19:35.194446 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:19:35.197409 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m13:19:35.200407 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\lenovo\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:19:35.202094 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\lenovo\real-time-stocks-mds\dbt_stocks\dbt_project.yml> not found
+
+[0m13:19:35.207592 [debug] [MainThread]: Command `dbt debug` failed at 13:19:35.207592 after 0.77 seconds
+[0m13:19:35.211674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002166EF660E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021671137580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216712004C0>]}
+[0m13:19:35.214510 [debug] [MainThread]: Flushing usage events
+[0m13:19:37.327236 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:35:24.720509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001544B8AA140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001544DAF1450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001544DAF2230>]}
+
+
+============================== 13:35:24.737580 | 6c8b1d6b-f879-4e21-ad40-6142d31d6a4f ==============================
+[0m13:35:24.737580 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:35:24.743669 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:35:24.747477 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\lenovo\real-time-stocks-mds\dbt_stocks\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:35:24.753482 [debug] [MainThread]: Command `dbt run` failed at 13:35:24.752033 after 0.65 seconds
+[0m13:35:24.756270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001544B8AA140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001544DAF1420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001544DAF1C90>]}
+[0m13:35:24.758688 [debug] [MainThread]: Flushing usage events
+[0m13:35:26.506794 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:04:50.850728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020245C2A110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020247E71450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020247E72200>]}
+
+
+============================== 14:04:50.888383 | facabcf6-4ad1-4425-afa8-2c81548e236e ==============================
+[0m14:04:50.888383 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:04:50.893167 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:04:50.898319 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\lenovo\real-time-stocks-mds\dbt_stocks\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:04:50.920693 [debug] [MainThread]: Command `dbt run` failed at 14:04:50.920693 after 0.49 seconds
+[0m14:04:50.924246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020245C2A110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020247E71420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020247E71C90>]}
+[0m14:04:50.925056 [debug] [MainThread]: Flushing usage events
+[0m14:04:52.746359 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:55:58.688818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CDEC03A110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CDEE285450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CDEE285420>]}
+
+
+============================== 15:55:58.702112 | 739374ec-002a-424a-86e2-aa64a758f1d6 ==============================
+[0m15:55:58.702112 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:55:58.705650 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\lenovo\\real-time-stocks-mds\\dbt_stocks\\logs'}
+[0m15:55:58.711980 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'dbt_stocks'
+[0m15:55:58.713616 [debug] [MainThread]: Command `dbt run` failed at 15:55:58.713616 after 0.39 seconds
+[0m15:55:58.714198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CDEC03A110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CDEE2D4190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CDEE2D4E20>]}
+[0m15:55:58.715847 [debug] [MainThread]: Flushing usage events
+[0m15:56:00.914987 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:05:05.968796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D10EEB6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D111101450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D111102200>]}
+
+
+============================== 16:05:05.984875 | abbec7a5-5906-4e86-9887-33d6d8f6421b ==============================
+[0m16:05:05.984875 [info ] [MainThread]: Running with dbt=1.11.2
+[0m16:05:05.990048 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:05:05.996986 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\lenovo\real-time-stocks-mds\dbt_stocks\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:05:06.000561 [debug] [MainThread]: Command `dbt run` failed at 16:05:06.000561 after 0.46 seconds
+[0m16:05:06.000561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D10EEB6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D111101420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D111101C90>]}
+[0m16:05:06.006930 [debug] [MainThread]: Flushing usage events
+[0m16:05:07.930707 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:11:34.038755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C52B51ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C54D909D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C54D91810>]}
+
+
+============================== 11:11:34.038755 | 14a9c0cf-d2ac-42e9-94ca-f8593b12cfda ==============================
+[0m11:11:34.038755 [info ] [MainThread]: Running with dbt=1.11.4
+[0m11:11:34.038755 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:11:34.075262 [info ] [MainThread]: dbt version: 1.11.4
+[0m11:11:34.076260 [info ] [MainThread]: python version: 3.10.11
+[0m11:11:34.077261 [info ] [MainThread]: python path: C:\Program Files\Python310\python.exe
+[0m11:11:34.078266 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m11:11:34.595467 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:11:34.596468 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:11:34.596468 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:11:34.679482 [info ] [MainThread]: Using profiles dir at C:\Users\lenovo\.dbt
+[0m11:11:34.679482 [info ] [MainThread]: Using profiles.yml file at C:\Users\lenovo\.dbt\profiles.yml
+[0m11:11:34.679482 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\lenovo\real-time-stocks-mds\dbt_stocks\dbt_project.yml
+[0m11:11:34.679482 [info ] [MainThread]: adapter type: snowflake
+[0m11:11:34.679482 [info ] [MainThread]: adapter version: 1.11.2
+[0m11:11:34.679482 [info ] [MainThread]: Configuration:
+[0m11:11:34.679482 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:11:34.679482 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:11:34.679482 [info ] [MainThread]: Required dependencies:
+[0m11:11:34.679482 [debug] [MainThread]: Executing "git --help"
+[0m11:11:34.828797 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:11:34.828797 [debug] [MainThread]: STDERR: "b''"
+[0m11:11:34.829833 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:11:34.830798 [info ] [MainThread]: Connection:
+[0m11:11:34.831518 [info ] [MainThread]:   account: qiihujv
+[0m11:11:34.832286 [info ] [MainThread]:   user: MOHIT
+[0m11:11:34.833331 [info ] [MainThread]:   database: STOCKS_MDS
+[0m11:11:34.833331 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m11:11:34.834293 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m11:11:34.835336 [info ] [MainThread]:   schema: COMMON
+[0m11:11:34.835336 [info ] [MainThread]:   authenticator: None
+[0m11:11:34.835336 [info ] [MainThread]:   oauth_client_id: None
+[0m11:11:34.835336 [info ] [MainThread]:   query_tag: None
+[0m11:11:34.835336 [info ] [MainThread]:   client_session_keep_alive: False
+[0m11:11:34.835336 [info ] [MainThread]:   host: None
+[0m11:11:34.839816 [info ] [MainThread]:   port: None
+[0m11:11:34.839816 [info ] [MainThread]:   proxy_host: None
+[0m11:11:34.839816 [info ] [MainThread]:   proxy_port: None
+[0m11:11:34.839816 [info ] [MainThread]:   protocol: None
+[0m11:11:34.839816 [info ] [MainThread]:   connect_retries: 1
+[0m11:11:34.839816 [info ] [MainThread]:   connect_timeout: None
+[0m11:11:34.839816 [info ] [MainThread]:   retry_on_database_errors: False
+[0m11:11:34.839816 [info ] [MainThread]:   retry_all: False
+[0m11:11:34.839816 [info ] [MainThread]:   insecure_mode: False
+[0m11:11:34.839816 [info ] [MainThread]:   reuse_connections: True
+[0m11:11:34.839816 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m11:11:34.839816 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m11:11:34.839816 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m11:11:35.303002 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m11:11:38.530605 [debug] [MainThread]: Using snowflake connection "debug"
+[0m11:11:38.531604 [debug] [MainThread]: On debug: select 1 as id
+[0m11:11:38.531604 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:11:41.120868 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m11:11:41.122883 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m11:11:41.127884 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m11:11:41.129887 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:11:41.131885 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\lenovo\real-time-stocks-mds\dbt_stocks\dbt_project.yml> not found
+
+[0m11:11:41.133884 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  290404 (08001): 404 Not Found: post qiihujv.snowflakecomputing.com:443/session/v1/login-request
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:11:41.137896 [debug] [MainThread]: Command `dbt debug` failed at 11:11:41.137896 after 7.22 seconds
+[0m11:11:41.139900 [debug] [MainThread]: Connection 'debug' was left open.
+[0m11:11:41.140897 [debug] [MainThread]: On debug: No close available on handle
+[0m11:11:41.142891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C52B51ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C55A60BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C55A61F30>]}
+[0m11:11:41.145944 [debug] [MainThread]: Flushing usage events
+[0m11:11:42.744344 [debug] [MainThread]: An error was encountered while trying to flush usage events

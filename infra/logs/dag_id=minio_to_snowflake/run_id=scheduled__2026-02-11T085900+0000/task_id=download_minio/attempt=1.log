@@ -1,0 +1,881 @@
+[2026-02-11T09:00:04.797+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-11T09:00:04.964+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-02-11T08:59:00+00:00 [queued]>
+[2026-02-11T09:00:04.995+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-02-11T08:59:00+00:00 [queued]>
+[2026-02-11T09:00:04.999+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-11T09:00:05.079+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_minio> on 2026-02-11 08:59:00+00:00
+[2026-02-11T09:00:05.110+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=90775) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-11T09:00:05.114+0000] {standard_task_runner.py:64} INFO - Started process 90821 to run task
+[2026-02-11T09:00:05.110+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'download_minio', 'scheduled__2026-02-11T08:59:00+00:00', '--job-id', '1126', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmp6q_93pc9']
+[2026-02-11T09:00:05.120+0000] {standard_task_runner.py:91} INFO - Job 1126: Subtask download_minio
+[2026-02-11T09:00:05.437+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.download_minio scheduled__2026-02-11T08:59:00+00:00 [running]> on host 6729b10e6876
+[2026-02-11T09:00:05.956+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='download_minio' AIRFLOW_CTX_EXECUTION_DATE='2026-02-11T08:59:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-11T08:59:00+00:00'
+[2026-02-11T09:00:05.959+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-11T09:00:07.521+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795801.json
+[2026-02-11T09:00:07.539+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795811.json
+[2026-02-11T09:00:07.558+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795821.json
+[2026-02-11T09:00:07.580+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795832.json
+[2026-02-11T09:00:07.605+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795843.json
+[2026-02-11T09:00:07.624+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795854.json
+[2026-02-11T09:00:07.646+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795864.json
+[2026-02-11T09:00:07.668+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795875.json
+[2026-02-11T09:00:07.690+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795889.json
+[2026-02-11T09:00:07.710+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795899.json
+[2026-02-11T09:00:07.735+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795910.json
+[2026-02-11T09:00:07.756+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795920.json
+[2026-02-11T09:00:07.782+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795931.json
+[2026-02-11T09:00:07.808+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795942.json
+[2026-02-11T09:00:07.853+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795952.json
+[2026-02-11T09:00:07.877+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795962.json
+[2026-02-11T09:00:07.896+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795973.json
+[2026-02-11T09:00:07.915+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795984.json
+[2026-02-11T09:00:07.942+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770795995.json
+[2026-02-11T09:00:07.996+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796006.json
+[2026-02-11T09:00:08.029+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796016.json
+[2026-02-11T09:00:08.051+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796027.json
+[2026-02-11T09:00:08.071+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796038.json
+[2026-02-11T09:00:08.097+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796048.json
+[2026-02-11T09:00:08.117+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796059.json
+[2026-02-11T09:00:08.137+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796069.json
+[2026-02-11T09:00:08.154+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796079.json
+[2026-02-11T09:00:08.189+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796091.json
+[2026-02-11T09:00:08.208+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796102.json
+[2026-02-11T09:00:08.227+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796113.json
+[2026-02-11T09:00:08.247+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796123.json
+[2026-02-11T09:00:08.265+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796133.json
+[2026-02-11T09:00:08.285+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796143.json
+[2026-02-11T09:00:08.302+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796156.json
+[2026-02-11T09:00:08.338+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796166.json
+[2026-02-11T09:00:08.356+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796178.json
+[2026-02-11T09:00:08.383+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796188.json
+[2026-02-11T09:00:08.416+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796200.json
+[2026-02-11T09:00:08.441+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796211.json
+[2026-02-11T09:00:08.477+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796222.json
+[2026-02-11T09:00:08.508+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796233.json
+[2026-02-11T09:00:08.527+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796243.json
+[2026-02-11T09:00:08.558+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796253.json
+[2026-02-11T09:00:08.589+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796264.json
+[2026-02-11T09:00:08.623+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796275.json
+[2026-02-11T09:00:08.672+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796286.json
+[2026-02-11T09:00:08.710+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796297.json
+[2026-02-11T09:00:08.733+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796307.json
+[2026-02-11T09:00:08.762+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796318.json
+[2026-02-11T09:00:08.794+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796328.json
+[2026-02-11T09:00:08.835+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796339.json
+[2026-02-11T09:00:08.874+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796350.json
+[2026-02-11T09:00:08.913+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796360.json
+[2026-02-11T09:00:08.942+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796371.json
+[2026-02-11T09:00:08.965+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796381.json
+[2026-02-11T09:00:08.996+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796392.json
+[2026-02-11T09:00:09.020+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796402.json
+[2026-02-11T09:00:09.044+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796413.json
+[2026-02-11T09:00:09.068+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796424.json
+[2026-02-11T09:00:09.089+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796435.json
+[2026-02-11T09:00:09.109+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796446.json
+[2026-02-11T09:00:09.134+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796456.json
+[2026-02-11T09:00:09.162+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796467.json
+[2026-02-11T09:00:09.187+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796478.json
+[2026-02-11T09:00:09.221+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796488.json
+[2026-02-11T09:00:09.248+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796499.json
+[2026-02-11T09:00:09.272+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796510.json
+[2026-02-11T09:00:09.294+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796521.json
+[2026-02-11T09:00:09.319+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796531.json
+[2026-02-11T09:00:09.339+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796541.json
+[2026-02-11T09:00:09.359+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796552.json
+[2026-02-11T09:00:09.380+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796562.json
+[2026-02-11T09:00:09.402+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796573.json
+[2026-02-11T09:00:09.421+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796584.json
+[2026-02-11T09:00:09.440+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796595.json
+[2026-02-11T09:00:09.463+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796606.json
+[2026-02-11T09:00:09.488+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796618.json
+[2026-02-11T09:00:09.508+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796628.json
+[2026-02-11T09:00:09.526+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796640.json
+[2026-02-11T09:00:09.547+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796650.json
+[2026-02-11T09:00:09.578+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796661.json
+[2026-02-11T09:00:09.600+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796672.json
+[2026-02-11T09:00:09.625+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796682.json
+[2026-02-11T09:00:09.652+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796693.json
+[2026-02-11T09:00:09.673+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796703.json
+[2026-02-11T09:00:09.698+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796714.json
+[2026-02-11T09:00:09.717+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796724.json
+[2026-02-11T09:00:09.735+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796735.json
+[2026-02-11T09:00:09.758+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796746.json
+[2026-02-11T09:00:09.777+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796757.json
+[2026-02-11T09:00:09.799+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796768.json
+[2026-02-11T09:00:09.818+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796780.json
+[2026-02-11T09:00:09.840+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796790.json
+[2026-02-11T09:00:09.863+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796801.json
+[2026-02-11T09:00:09.887+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796813.json
+[2026-02-11T09:00:09.908+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796823.json
+[2026-02-11T09:00:09.930+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796834.json
+[2026-02-11T09:00:09.952+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796844.json
+[2026-02-11T09:00:09.976+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796855.json
+[2026-02-11T09:00:10.004+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796866.json
+[2026-02-11T09:00:10.039+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796877.json
+[2026-02-11T09:00:10.067+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796887.json
+[2026-02-11T09:00:10.095+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796898.json
+[2026-02-11T09:00:10.124+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796909.json
+[2026-02-11T09:00:10.150+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796920.json
+[2026-02-11T09:00:10.181+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796930.json
+[2026-02-11T09:00:10.207+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796943.json
+[2026-02-11T09:00:10.229+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796954.json
+[2026-02-11T09:00:10.252+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796965.json
+[2026-02-11T09:00:10.273+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796976.json
+[2026-02-11T09:00:10.293+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796987.json
+[2026-02-11T09:00:10.314+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770796998.json
+[2026-02-11T09:00:10.335+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797047.json
+[2026-02-11T09:00:10.358+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797059.json
+[2026-02-11T09:00:10.381+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797069.json
+[2026-02-11T09:00:10.421+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797082.json
+[2026-02-11T09:00:10.447+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797095.json
+[2026-02-11T09:00:10.479+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797106.json
+[2026-02-11T09:00:10.508+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797117.json
+[2026-02-11T09:00:10.536+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797128.json
+[2026-02-11T09:00:10.585+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797139.json
+[2026-02-11T09:00:10.607+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797149.json
+[2026-02-11T09:00:10.631+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797159.json
+[2026-02-11T09:00:10.655+0000] {logging_mixin.py:188} INFO - Downloaded AAPL/1770797171.json
+[2026-02-11T09:00:10.673+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795804.json
+[2026-02-11T09:00:10.691+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795815.json
+[2026-02-11T09:00:10.746+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795825.json
+[2026-02-11T09:00:10.767+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795836.json
+[2026-02-11T09:00:10.787+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795847.json
+[2026-02-11T09:00:10.807+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795857.json
+[2026-02-11T09:00:10.829+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795868.json
+[2026-02-11T09:00:10.851+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795882.json
+[2026-02-11T09:00:10.869+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795892.json
+[2026-02-11T09:00:10.889+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795903.json
+[2026-02-11T09:00:10.915+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795913.json
+[2026-02-11T09:00:10.936+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795924.json
+[2026-02-11T09:00:10.955+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795935.json
+[2026-02-11T09:00:10.977+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795945.json
+[2026-02-11T09:00:11.005+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795955.json
+[2026-02-11T09:00:11.027+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795966.json
+[2026-02-11T09:00:11.161+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795977.json
+[2026-02-11T09:00:11.194+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795988.json
+[2026-02-11T09:00:11.219+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770795999.json
+[2026-02-11T09:00:11.243+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796009.json
+[2026-02-11T09:00:11.271+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796020.json
+[2026-02-11T09:00:11.295+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796031.json
+[2026-02-11T09:00:11.313+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796041.json
+[2026-02-11T09:00:11.377+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796052.json
+[2026-02-11T09:00:11.399+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796062.json
+[2026-02-11T09:00:11.419+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796072.json
+[2026-02-11T09:00:11.506+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796084.json
+[2026-02-11T09:00:11.527+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796095.json
+[2026-02-11T09:00:11.552+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796106.json
+[2026-02-11T09:00:11.573+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796116.json
+[2026-02-11T09:00:11.593+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796126.json
+[2026-02-11T09:00:11.615+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796136.json
+[2026-02-11T09:00:11.636+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796149.json
+[2026-02-11T09:00:11.659+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796159.json
+[2026-02-11T09:00:11.681+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796171.json
+[2026-02-11T09:00:11.700+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796181.json
+[2026-02-11T09:00:11.718+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796192.json
+[2026-02-11T09:00:11.739+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796204.json
+[2026-02-11T09:00:11.760+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796215.json
+[2026-02-11T09:00:11.781+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796226.json
+[2026-02-11T09:00:11.801+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796236.json
+[2026-02-11T09:00:11.822+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796247.json
+[2026-02-11T09:00:11.843+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796257.json
+[2026-02-11T09:00:11.869+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796268.json
+[2026-02-11T09:00:11.894+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796279.json
+[2026-02-11T09:00:11.951+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796290.json
+[2026-02-11T09:00:11.987+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796300.json
+[2026-02-11T09:00:12.020+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796311.json
+[2026-02-11T09:00:12.040+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796321.json
+[2026-02-11T09:00:12.067+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796332.json
+[2026-02-11T09:00:12.090+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796343.json
+[2026-02-11T09:00:12.142+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796353.json
+[2026-02-11T09:00:12.166+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796364.json
+[2026-02-11T09:00:12.186+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796375.json
+[2026-02-11T09:00:12.205+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796385.json
+[2026-02-11T09:00:12.223+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796396.json
+[2026-02-11T09:00:12.242+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796406.json
+[2026-02-11T09:00:12.260+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796417.json
+[2026-02-11T09:00:12.284+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796428.json
+[2026-02-11T09:00:12.326+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796438.json
+[2026-02-11T09:00:12.360+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796450.json
+[2026-02-11T09:00:12.386+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796460.json
+[2026-02-11T09:00:12.408+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796471.json
+[2026-02-11T09:00:12.436+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796481.json
+[2026-02-11T09:00:12.476+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796492.json
+[2026-02-11T09:00:12.516+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796503.json
+[2026-02-11T09:00:12.583+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796514.json
+[2026-02-11T09:00:12.608+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796524.json
+[2026-02-11T09:00:12.656+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796534.json
+[2026-02-11T09:00:12.701+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796545.json
+[2026-02-11T09:00:12.729+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796555.json
+[2026-02-11T09:00:12.785+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796566.json
+[2026-02-11T09:00:12.822+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796577.json
+[2026-02-11T09:00:12.854+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796588.json
+[2026-02-11T09:00:12.885+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796599.json
+[2026-02-11T09:00:12.905+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796611.json
+[2026-02-11T09:00:12.925+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796621.json
+[2026-02-11T09:00:12.952+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796633.json
+[2026-02-11T09:00:12.974+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796643.json
+[2026-02-11T09:00:12.999+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796654.json
+[2026-02-11T09:00:13.025+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796665.json
+[2026-02-11T09:00:13.051+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796675.json
+[2026-02-11T09:00:13.175+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796686.json
+[2026-02-11T09:00:13.201+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796696.json
+[2026-02-11T09:00:13.221+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796707.json
+[2026-02-11T09:00:13.237+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796717.json
+[2026-02-11T09:00:13.248+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796728.json
+[2026-02-11T09:00:13.259+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796739.json
+[2026-02-11T09:00:13.271+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796750.json
+[2026-02-11T09:00:13.303+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796762.json
+[2026-02-11T09:00:13.387+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796773.json
+[2026-02-11T09:00:13.432+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796783.json
+[2026-02-11T09:00:13.450+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796794.json
+[2026-02-11T09:00:13.473+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796806.json
+[2026-02-11T09:00:13.566+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796817.json
+[2026-02-11T09:00:13.591+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796827.json
+[2026-02-11T09:00:13.630+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796837.json
+[2026-02-11T09:00:13.692+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796848.json
+[2026-02-11T09:00:13.708+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796859.json
+[2026-02-11T09:00:13.742+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796870.json
+[2026-02-11T09:00:13.764+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796880.json
+[2026-02-11T09:00:13.806+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796891.json
+[2026-02-11T09:00:13.838+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796901.json
+[2026-02-11T09:00:13.866+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796913.json
+[2026-02-11T09:00:13.910+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796924.json
+[2026-02-11T09:00:13.925+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796937.json
+[2026-02-11T09:00:13.944+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796947.json
+[2026-02-11T09:00:13.991+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796958.json
+[2026-02-11T09:00:14.010+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796969.json
+[2026-02-11T09:00:14.043+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796980.json
+[2026-02-11T09:00:14.067+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770796991.json
+[2026-02-11T09:00:14.085+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797002.json
+[2026-02-11T09:00:14.116+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797039.json
+[2026-02-11T09:00:14.163+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797052.json
+[2026-02-11T09:00:14.195+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797062.json
+[2026-02-11T09:00:14.225+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797074.json
+[2026-02-11T09:00:14.258+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797088.json
+[2026-02-11T09:00:14.279+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797099.json
+[2026-02-11T09:00:14.301+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797110.json
+[2026-02-11T09:00:14.335+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797121.json
+[2026-02-11T09:00:14.353+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797132.json
+[2026-02-11T09:00:14.392+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797142.json
+[2026-02-11T09:00:14.475+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797152.json
+[2026-02-11T09:00:14.495+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797164.json
+[2026-02-11T09:00:14.554+0000] {logging_mixin.py:188} INFO - Downloaded AMZN/1770797175.json
+[2026-02-11T09:00:14.623+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795803.json
+[2026-02-11T09:00:14.663+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795814.json
+[2026-02-11T09:00:14.762+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795824.json
+[2026-02-11T09:00:14.822+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795835.json
+[2026-02-11T09:00:14.856+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795846.json
+[2026-02-11T09:00:15.027+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795857.json
+[2026-02-11T09:00:15.080+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795867.json
+[2026-02-11T09:00:15.164+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795879.json
+[2026-02-11T09:00:15.226+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795891.json
+[2026-02-11T09:00:15.249+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795902.json
+[2026-02-11T09:00:15.427+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795912.json
+[2026-02-11T09:00:15.521+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795923.json
+[2026-02-11T09:00:15.557+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795934.json
+[2026-02-11T09:00:15.649+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795944.json
+[2026-02-11T09:00:15.665+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795954.json
+[2026-02-11T09:00:15.700+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795965.json
+[2026-02-11T09:00:15.720+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795976.json
+[2026-02-11T09:00:15.738+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795987.json
+[2026-02-11T09:00:15.796+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770795998.json
+[2026-02-11T09:00:15.824+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796008.json
+[2026-02-11T09:00:15.859+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796019.json
+[2026-02-11T09:00:15.893+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796030.json
+[2026-02-11T09:00:15.926+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796040.json
+[2026-02-11T09:00:15.958+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796051.json
+[2026-02-11T09:00:16.006+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796061.json
+[2026-02-11T09:00:16.040+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796071.json
+[2026-02-11T09:00:16.060+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796083.json
+[2026-02-11T09:00:16.094+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796094.json
+[2026-02-11T09:00:16.112+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796105.json
+[2026-02-11T09:00:16.177+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796115.json
+[2026-02-11T09:00:16.197+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796125.json
+[2026-02-11T09:00:16.249+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796136.json
+[2026-02-11T09:00:16.266+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796147.json
+[2026-02-11T09:00:16.290+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796158.json
+[2026-02-11T09:00:16.322+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796170.json
+[2026-02-11T09:00:16.365+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796180.json
+[2026-02-11T09:00:16.538+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796191.json
+[2026-02-11T09:00:16.578+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796203.json
+[2026-02-11T09:00:16.704+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796214.json
+[2026-02-11T09:00:16.784+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796225.json
+[2026-02-11T09:00:16.857+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796236.json
+[2026-02-11T09:00:16.878+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796246.json
+[2026-02-11T09:00:16.942+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796256.json
+[2026-02-11T09:00:16.982+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796267.json
+[2026-02-11T09:00:17.033+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796277.json
+[2026-02-11T09:00:17.098+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796289.json
+[2026-02-11T09:00:17.141+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796299.json
+[2026-02-11T09:00:17.159+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796310.json
+[2026-02-11T09:00:17.225+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796321.json
+[2026-02-11T09:00:17.281+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796331.json
+[2026-02-11T09:00:17.321+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796342.json
+[2026-02-11T09:00:17.391+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796352.json
+[2026-02-11T09:00:17.513+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796363.json
+[2026-02-11T09:00:17.824+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796374.json
+[2026-02-11T09:00:17.849+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796384.json
+[2026-02-11T09:00:17.989+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796395.json
+[2026-02-11T09:00:18.255+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796406.json
+[2026-02-11T09:00:18.310+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796416.json
+[2026-02-11T09:00:18.393+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796427.json
+[2026-02-11T09:00:18.492+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796438.json
+[2026-02-11T09:00:18.524+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796449.json
+[2026-02-11T09:00:18.574+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796459.json
+[2026-02-11T09:00:18.647+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796470.json
+[2026-02-11T09:00:18.691+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796480.json
+[2026-02-11T09:00:18.881+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796491.json
+[2026-02-11T09:00:18.938+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796502.json
+[2026-02-11T09:00:18.969+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796513.json
+[2026-02-11T09:00:18.998+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796523.json
+[2026-02-11T09:00:19.067+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796534.json
+[2026-02-11T09:00:19.117+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796544.json
+[2026-02-11T09:00:19.264+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796554.json
+[2026-02-11T09:00:19.343+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796565.json
+[2026-02-11T09:00:19.557+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796576.json
+[2026-02-11T09:00:19.576+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796587.json
+[2026-02-11T09:00:19.610+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796598.json
+[2026-02-11T09:00:19.642+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796610.json
+[2026-02-11T09:00:19.690+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796620.json
+[2026-02-11T09:00:19.738+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796632.json
+[2026-02-11T09:00:19.768+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796642.json
+[2026-02-11T09:00:19.806+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796653.json
+[2026-02-11T09:00:19.822+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796664.json
+[2026-02-11T09:00:19.869+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796674.json
+[2026-02-11T09:00:19.922+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796685.json
+[2026-02-11T09:00:19.968+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796696.json
+[2026-02-11T09:00:20.014+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796706.json
+[2026-02-11T09:00:20.079+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796716.json
+[2026-02-11T09:00:20.096+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796727.json
+[2026-02-11T09:00:20.135+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796738.json
+[2026-02-11T09:00:20.206+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796749.json
+[2026-02-11T09:00:20.242+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796761.json
+[2026-02-11T09:00:20.292+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796772.json
+[2026-02-11T09:00:20.307+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796783.json
+[2026-02-11T09:00:20.366+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796793.json
+[2026-02-11T09:00:20.386+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796804.json
+[2026-02-11T09:00:20.435+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796815.json
+[2026-02-11T09:00:20.467+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796826.json
+[2026-02-11T09:00:20.498+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796837.json
+[2026-02-11T09:00:20.544+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796847.json
+[2026-02-11T09:00:20.593+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796858.json
+[2026-02-11T09:00:20.982+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796869.json
+[2026-02-11T09:00:21.096+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796879.json
+[2026-02-11T09:00:21.125+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796890.json
+[2026-02-11T09:00:21.175+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796900.json
+[2026-02-11T09:00:21.252+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796912.json
+[2026-02-11T09:00:21.285+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796923.json
+[2026-02-11T09:00:21.318+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796933.json
+[2026-02-11T09:00:21.406+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796946.json
+[2026-02-11T09:00:21.470+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796957.json
+[2026-02-11T09:00:21.522+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796968.json
+[2026-02-11T09:00:21.618+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796979.json
+[2026-02-11T09:00:21.763+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770796990.json
+[2026-02-11T09:00:21.784+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797001.json
+[2026-02-11T09:00:21.803+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797037.json
+[2026-02-11T09:00:21.891+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797051.json
+[2026-02-11T09:00:21.970+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797061.json
+[2026-02-11T09:00:22.002+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797072.json
+[2026-02-11T09:00:22.024+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797087.json
+[2026-02-11T09:00:22.044+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797098.json
+[2026-02-11T09:00:22.062+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797109.json
+[2026-02-11T09:00:22.141+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797120.json
+[2026-02-11T09:00:22.187+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797131.json
+[2026-02-11T09:00:22.207+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797141.json
+[2026-02-11T09:00:22.220+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797151.json
+[2026-02-11T09:00:22.231+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797163.json
+[2026-02-11T09:00:22.247+0000] {logging_mixin.py:188} INFO - Downloaded GOOGL/1770797174.json
+[2026-02-11T09:00:22.261+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795802.json
+[2026-02-11T09:00:22.275+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795812.json
+[2026-02-11T09:00:22.334+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795822.json
+[2026-02-11T09:00:22.367+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795833.json
+[2026-02-11T09:00:22.425+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795844.json
+[2026-02-11T09:00:22.474+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795855.json
+[2026-02-11T09:00:22.710+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795865.json
+[2026-02-11T09:00:22.871+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795876.json
+[2026-02-11T09:00:22.957+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795890.json
+[2026-02-11T09:00:22.986+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795900.json
+[2026-02-11T09:00:23.003+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795910.json
+[2026-02-11T09:00:23.017+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795921.json
+[2026-02-11T09:00:23.029+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795932.json
+[2026-02-11T09:00:23.158+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795942.json
+[2026-02-11T09:00:23.295+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795953.json
+[2026-02-11T09:00:23.326+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795963.json
+[2026-02-11T09:00:23.444+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795974.json
+[2026-02-11T09:00:23.505+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795985.json
+[2026-02-11T09:00:23.561+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770795996.json
+[2026-02-11T09:00:23.578+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796007.json
+[2026-02-11T09:00:23.598+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796017.json
+[2026-02-11T09:00:23.814+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796028.json
+[2026-02-11T09:00:23.961+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796039.json
+[2026-02-11T09:00:23.979+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796049.json
+[2026-02-11T09:00:24.160+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796060.json
+[2026-02-11T09:00:24.191+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796070.json
+[2026-02-11T09:00:24.355+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796080.json
+[2026-02-11T09:00:24.588+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796092.json
+[2026-02-11T09:00:24.611+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796103.json
+[2026-02-11T09:00:24.630+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796113.json
+[2026-02-11T09:00:24.649+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796123.json
+[2026-02-11T09:00:24.665+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796134.json
+[2026-02-11T09:00:24.685+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796145.json
+[2026-02-11T09:00:24.722+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796157.json
+[2026-02-11T09:00:24.835+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796167.json
+[2026-02-11T09:00:24.847+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796179.json
+[2026-02-11T09:00:24.884+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796189.json
+[2026-02-11T09:00:25.032+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796201.json
+[2026-02-11T09:00:25.091+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796212.json
+[2026-02-11T09:00:25.168+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796223.json
+[2026-02-11T09:00:25.238+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796234.json
+[2026-02-11T09:00:25.403+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796244.json
+[2026-02-11T09:00:25.462+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796254.json
+[2026-02-11T09:00:25.536+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796265.json
+[2026-02-11T09:00:25.631+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796276.json
+[2026-02-11T09:00:25.668+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796287.json
+[2026-02-11T09:00:25.690+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796297.json
+[2026-02-11T09:00:25.936+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796308.json
+[2026-02-11T09:00:26.000+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796319.json
+[2026-02-11T09:00:26.113+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796329.json
+[2026-02-11T09:00:26.133+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796340.json
+[2026-02-11T09:00:26.336+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796351.json
+[2026-02-11T09:00:26.439+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796361.json
+[2026-02-11T09:00:26.603+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796372.json
+[2026-02-11T09:00:26.633+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796382.json
+[2026-02-11T09:00:26.708+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796393.json
+[2026-02-11T09:00:26.926+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796403.json
+[2026-02-11T09:00:27.064+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796414.json
+[2026-02-11T09:00:27.258+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796425.json
+[2026-02-11T09:00:27.825+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796435.json
+[2026-02-11T09:00:27.997+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796446.json
+[2026-02-11T09:00:28.085+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796457.json
+[2026-02-11T09:00:28.197+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796468.json
+[2026-02-11T09:00:28.405+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796478.json
+[2026-02-11T09:00:28.526+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796489.json
+[2026-02-11T09:00:28.567+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796500.json
+[2026-02-11T09:00:28.842+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796511.json
+[2026-02-11T09:00:37.301+0000] {job.py:218} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 213, in heartbeat
+    heartbeat_callback(session)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/local_task_job_runner.py", line 261, in heartbeat_callback
+    self.task_instance.refresh_from_db()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1821, in refresh_from_db
+    _refresh_from_db(task_instance=self, session=session, lock_for_update=lock_for_update)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 510, in _refresh_from_db
+    ti = TaskInstance.get_task_instance(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 115, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1807, in get_task_instance
+    return query.one_or_none()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2850, in one_or_none
+    return self._iter().one_or_none()
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2916, in _iter
+    result = self.session.execute(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-11T09:01:06.681+0000] {job.py:226} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2026-02-11T09:01:13.444+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796521.json
+[2026-02-11T09:01:13.627+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796532.json
+[2026-02-11T09:01:13.671+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796542.json
+[2026-02-11T09:01:13.765+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796553.json
+[2026-02-11T09:01:13.787+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796563.json
+[2026-02-11T09:01:13.848+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796574.json
+[2026-02-11T09:01:13.903+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796585.json
+[2026-02-11T09:01:14.031+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796596.json
+[2026-02-11T09:01:14.111+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796607.json
+[2026-02-11T09:01:14.146+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796619.json
+[2026-02-11T09:01:14.159+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796629.json
+[2026-02-11T09:01:14.202+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796640.json
+[2026-02-11T09:01:14.234+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796651.json
+[2026-02-11T09:01:14.286+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796662.json
+[2026-02-11T09:01:14.326+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796672.json
+[2026-02-11T09:01:14.413+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796683.json
+[2026-02-11T09:01:14.451+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796694.json
+[2026-02-11T09:01:14.515+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796704.json
+[2026-02-11T09:01:14.544+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796714.json
+[2026-02-11T09:01:14.594+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796725.json
+[2026-02-11T09:01:14.643+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796736.json
+[2026-02-11T09:01:14.667+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796747.json
+[2026-02-11T09:01:14.710+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796758.json
+[2026-02-11T09:01:14.729+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796770.json
+[2026-02-11T09:01:14.796+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796780.json
+[2026-02-11T09:01:14.831+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796791.json
+[2026-02-11T09:01:14.926+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796802.json
+[2026-02-11T09:01:14.965+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796814.json
+[2026-02-11T09:01:14.985+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796824.json
+[2026-02-11T09:01:15.044+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796835.json
+[2026-02-11T09:01:15.111+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796845.json
+[2026-02-11T09:01:15.179+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796856.json
+[2026-02-11T09:01:15.228+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796867.json
+[2026-02-11T09:01:15.264+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796878.json
+[2026-02-11T09:01:15.288+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796888.json
+[2026-02-11T09:01:15.391+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796899.json
+[2026-02-11T09:01:15.518+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796910.json
+[2026-02-11T09:01:15.678+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796921.json
+[2026-02-11T09:01:15.922+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796932.json
+[2026-02-11T09:01:16.019+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796944.json
+[2026-02-11T09:01:16.104+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796955.json
+[2026-02-11T09:01:16.165+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796966.json
+[2026-02-11T09:01:16.287+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796977.json
+[2026-02-11T09:01:16.388+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796988.json
+[2026-02-11T09:01:16.437+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770796999.json
+[2026-02-11T09:01:16.508+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797048.json
+[2026-02-11T09:01:16.600+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797059.json
+[2026-02-11T09:01:16.680+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797071.json
+[2026-02-11T09:01:16.698+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797083.json
+[2026-02-11T09:01:16.716+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797096.json
+[2026-02-11T09:01:16.792+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797107.json
+[2026-02-11T09:01:16.813+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797118.json
+[2026-02-11T09:01:16.888+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797129.json
+[2026-02-11T09:01:16.918+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797139.json
+[2026-02-11T09:01:16.951+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797150.json
+[2026-02-11T09:01:16.982+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797161.json
+[2026-02-11T09:01:17.027+0000] {logging_mixin.py:188} INFO - Downloaded MSFT/1770797172.json
+[2026-02-11T09:01:17.134+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795803.json
+[2026-02-11T09:01:17.190+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795813.json
+[2026-02-11T09:01:17.227+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795823.json
+[2026-02-11T09:01:17.264+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795834.json
+[2026-02-11T09:01:17.326+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795845.json
+[2026-02-11T09:01:17.353+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795856.json
+[2026-02-11T09:01:17.525+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795866.json
+[2026-02-11T09:01:17.559+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795878.json
+[2026-02-11T09:01:17.598+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795891.json
+[2026-02-11T09:01:17.643+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795901.json
+[2026-02-11T09:01:17.905+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795911.json
+[2026-02-11T09:01:18.038+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795922.json
+[2026-02-11T09:01:18.090+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795933.json
+[2026-02-11T09:01:18.127+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795943.json
+[2026-02-11T09:01:18.216+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795953.json
+[2026-02-11T09:01:18.271+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795964.json
+[2026-02-11T09:01:18.285+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795975.json
+[2026-02-11T09:01:18.339+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795986.json
+[2026-02-11T09:01:18.702+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770795997.json
+[2026-02-11T09:01:18.737+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796007.json
+[2026-02-11T09:01:18.826+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796018.json
+[2026-02-11T09:01:18.924+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796029.json
+[2026-02-11T09:01:19.105+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796039.json
+[2026-02-11T09:01:19.240+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796050.json
+[2026-02-11T09:01:19.332+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796060.json
+[2026-02-11T09:01:19.379+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796071.json
+[2026-02-11T09:01:19.536+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796081.json
+[2026-02-11T09:01:19.619+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796093.json
+[2026-02-11T09:01:19.743+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796104.json
+[2026-02-11T09:01:19.857+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796114.json
+[2026-02-11T09:01:19.910+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796124.json
+[2026-02-11T09:01:20.034+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796135.json
+[2026-02-11T09:01:20.193+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796146.json
+[2026-02-11T09:01:20.261+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796157.json
+[2026-02-11T09:01:20.286+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796169.json
+[2026-02-11T09:01:20.314+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796180.json
+[2026-02-11T09:01:20.373+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796190.json
+[2026-02-11T09:01:20.397+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796202.json
+[2026-02-11T09:01:20.695+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796213.json
+[2026-02-11T09:01:20.836+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796224.json
+[2026-02-11T09:01:20.904+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796235.json
+[2026-02-11T09:01:20.955+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796245.json
+[2026-02-11T09:01:21.002+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796255.json
+[2026-02-11T09:01:21.088+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796266.json
+[2026-02-11T09:01:21.127+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796277.json
+[2026-02-11T09:01:21.156+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796288.json
+[2026-02-11T09:01:21.226+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796298.json
+[2026-02-11T09:01:21.306+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796309.json
+[2026-02-11T09:01:21.336+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796320.json
+[2026-02-11T09:01:21.522+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796330.json
+[2026-02-11T09:01:21.585+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796341.json
+[2026-02-11T09:01:21.619+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796352.json
+[2026-02-11T09:01:21.638+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796362.json
+[2026-02-11T09:01:22.021+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796373.json
+[2026-02-11T09:01:22.097+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796383.json
+[2026-02-11T09:01:22.177+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796394.json
+[2026-02-11T09:01:22.325+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796404.json
+[2026-02-11T09:01:22.359+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796415.json
+[2026-02-11T09:01:22.388+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796426.json
+[2026-02-11T09:01:22.473+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796437.json
+[2026-02-11T09:01:22.535+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796448.json
+[2026-02-11T09:01:22.732+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796458.json
+[2026-02-11T09:01:22.850+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796469.json
+[2026-02-11T09:01:22.890+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796479.json
+[2026-02-11T09:01:23.016+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796490.json
+[2026-02-11T09:01:23.120+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796501.json
+[2026-02-11T09:01:23.202+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796512.json
+[2026-02-11T09:01:23.303+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796522.json
+[2026-02-11T09:01:23.630+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796533.json
+[2026-02-11T09:01:24.699+0000] {logging_mixin.py:188} INFO - Downloaded TSLA/1770796543.json
+[2026-02-11T09:01:56.355+0000] {job.py:226} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2026-02-11T09:02:53.053+0000] {job.py:226} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2026-02-11T09:04:08.412+0000] {job.py:226} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2026-02-11T09:05:17.700+0000] {job.py:226} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2026-02-11T09:05:21.678+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-11T09:05:23.177+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 964, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/httpsession.py", line 464, in send
+    urllib_response = conn.urlopen(
+                      ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 845, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/retry.py", line 445, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 497, in _make_request
+    conn.request(
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/awsrequest.py", line 96, in request
+    rval = super().request(method, url, body, headers, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 395, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.12/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/awsrequest.py", line 123, in _send_output
+    self.send(msg)
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/awsrequest.py", line 223, in send
+    return super().send(str)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/http/client.py", line 1035, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 243, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <botocore.awsrequest.AWSHTTPConnection object at 0x7bbf4e2301a0>: Failed to resolve 'minio' ([Errno -3] Temporary failure in name resolution)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/minio_to_snowflake.py", line 46, in download_from_minio
+    s3.download_file(BUCKET, key, local_path)
+  File "/home/airflow/.local/lib/python3.12/site-packages/boto3/s3/inject.py", line 192, in download_file
+    return transfer.download_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/boto3/s3/transfer.py", line 406, in download_file
+    future.result()
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 103, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 266, in result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/tasks.py", line 139, in __call__
+    return self._execute_main(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/tasks.py", line 162, in _execute_main
+    return_value = self._main(**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/download.py", line 569, in _main
+    response = client.get_object(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 565, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 1001, in _make_api_call
+    http, parsed_response = self._make_request(
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 1027, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 202, in _send_request
+    while self._needs_retry(
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 354, in _needs_retry
+    responses = self._event_emitter.emit(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 207, in __call__
+    if self._checker(**checker_kwargs):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 284, in __call__
+    should_retry = self._should_retry(
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 320, in _should_retry
+    return self._checker(attempt_number, response, caught_exception)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 363, in __call__
+    checker_response = checker(
+                       ^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 247, in __call__
+    return self._check_caught_exception(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 416, in _check_caught_exception
+    raise caught_exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 281, in _do_get_response
+    http_response = self._send(request)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 377, in _send
+    return self.http_session.send(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/httpsession.py", line 493, in send
+    raise EndpointConnectionError(endpoint_url=request.url, error=e)
+botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "http://minio:9000/bronzes-tran1234/TSLA/1770796553.json"
+[2026-02-11T09:05:37.192+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1126 for task download_minio ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 90821)
+[2026-02-11T09:05:37.835+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-11T09:05:37.938+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-11T09:05:37.991+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
